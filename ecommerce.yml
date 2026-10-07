@@ -24,6 +24,15 @@ jwt:
   secret: MySecretKeyForEcommerceApplicationThatIsAtLeast32CharactersLongForJWTTokens
   expiration: 86400000
 
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
 springdoc:
   api-docs:
     path: /api-docs
